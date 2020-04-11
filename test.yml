@@ -1,0 +1,27 @@
+name: Khaja
+degree: Btech
+permanantAddress: &addr "Hyderabad Telangana"
+activity: true
+hobbies:
+  - cricket
+  - udemy
+  - youtube
+  - devops
+  - sudoku
+placesILived:
+  - hyderabad: india
+    studied: none
+    address: *addr
+  - vijayawada: india
+    studied: none
+  - guntur: india
+    studied: none
+  - bhimavaram: india
+    studied: schooling
+  - cincinnati: usa
+    studied: none
+  - dallas: usa
+    studied: none
+aboutMe: |
+  Hello, my name is Khaja. I am working as an Automation Architect. 
+  My passion is learning and implementing new programming languages, technologies, tools and framework.
