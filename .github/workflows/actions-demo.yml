@@ -6,5 +6,18 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World
-        run: echo "Hello World"
+      - name: Hello World on Ubuntu
+        run: echo "Hello Ubuntu World"
+  windows-job:
+    runs-on: windows-latest
+    steps:
+      - name: Hello World on Windows with Default shell
+        run: Get-Location
+      - name: Hello World on Windows with Git Bash shell
+        run: echo "Hello Windows World"
+        shell: bash
+  mac-job:
+    runs-on: macos-latest
+    steps:
+      - name: Get Systme Profile information of Mac OS
+        run: system_profiler SPSoftwareDataType
