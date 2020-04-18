@@ -36,3 +36,13 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+  run-on-mac:
+    runs-on: [macos-latest]
+    needs: [build]
+    steps:
+      - name: Printing the operating System
+        run: 
+          system_profiler SPSoftwareDataType
+        
+        
+        
