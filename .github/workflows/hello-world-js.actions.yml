@@ -13,3 +13,12 @@ jobs:
           who-to-greet: "Khaja"
       - name: Run JS Action
         run: echo "${{ steps.hello.outputs.time }}"
+  checkout-demo:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Before Checkout
+        run: ls -la
+      - name: Checkout now
+        uses: actions/checkout@v2
+      - name: After Checkout
+        run: ls -la
