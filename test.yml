@@ -1,8 +1,8 @@
-name: Khaja
+name: Khaja # Scalar data
 degree: Btech
-permanantAddress: &addr "Hyderabad Telangana"
+permanantAddress: &permanantAddress "Hyderabad Telangana" # Reusing data
 activity: true
-hobbies:
+hobbies: &hobby # List/Collection
   - cricket
   - udemy
   - youtube
@@ -11,17 +11,25 @@ hobbies:
 placesILived:
   - hyderabad: india
     studied: none
-    address: *addr
-  - vijayawada: india
+    address: *permanantAddress
+    hobbies:
+      - *hobby
+      - football
+  - delhi: india
     studied: none
-  - guntur: india
+  - bangalore: india
     studied: none
-  - bhimavaram: india
-    studied: schooling
-  - cincinnati: usa
+  - chennai: india
+    studied: none
+  - california: usa
     studied: none
   - dallas: usa
     studied: none
+hello: >
+  This is a hello world
+  example that is used to 
+  present a demo of 
+  multi-line formatting.
 aboutMe: |
   Hello, my name is Khaja. I am working as an Automation Architect. 
   My passion is learning and implementing new programming languages, technologies, tools and framework.
