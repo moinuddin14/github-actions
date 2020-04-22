@@ -1,0 +1,15 @@
+name: Working with environment variables
+
+on: push
+
+env:
+  GLOBAL_VARIABLE: Global Variable
+
+jobs:
+  env-var:
+    name: Env Variables
+    runs-on: ubuntu-latest
+    steps:
+      - name: All Env Variables
+      - run: |
+          echo "Global Env Variable: ${GLOBAL_VARIABLE}"

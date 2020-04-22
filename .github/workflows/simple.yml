@@ -5,9 +5,15 @@ on: [push, pull_request]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
+    env:
+      name: hello
     steps:
       - name: Echo a string
-        run: echo "Hello World"
+        run: |
+          echo "Hello World"
+          echo ${{ GITHUB_REPOSITORY }}
+          echo ${{ run-shell-command.name }}
+
       - name: Multiline Script
         run: |
           node -v
