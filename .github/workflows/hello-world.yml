@@ -11,5 +11,3 @@ jobs:
     steps:
       - name: Echo Hello World Static
         run: echo "Hello World1"
-      - name: Echo Hello World through environment variable
-        run: echo "${{ VALUE }}"
