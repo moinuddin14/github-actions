@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: All Env Variables
-      - run: |
+        run: |
           echo "Global Env Variable: ${GLOBAL_VARIABLE}"
