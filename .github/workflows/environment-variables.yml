@@ -6,10 +6,30 @@ env:
   GLOBAL_VARIABLE: Global Variable
 
 jobs:
-  env-var:
-    name: Env Variables
+  env-var1:
+    env:
+      JOB_LEVEL_VARIABLE: Job Level Variable
+    name: Env Variables1
     runs-on: ubuntu-latest
     steps:
       - name: All Env Variables
+        env:
+          STEP_LEVEL_VARIABLE: Step Level Variable
         run: |
           echo "Global Env Variable: ${GLOBAL_VARIABLE}"
+          echo "Job Level Env Variable: ${JOB_LEVEL_VARIABLE}"
+          echo "Step Level Env Variable: ${STEP_LEVEL_VARIABLE}"
+      - name: Failes at Step Level Environment Variable
+        run: |
+          echo "Global Env Variable: ${GLOBAL_VARIABLE}"
+          echo "Job Level Env Variable: ${JOB_LEVEL_VARIABLE}"
+          echo "Step Level Env Variable: ${STEP_LEVEL_VARIABLE}"
+  env-var2:
+    name: Env Variables2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Failes at Job and Step Level Environment Variable
+        run: |
+          echo "Global Env Variable: ${GLOBAL_VARIABLE}"
+          echo "Job Level Env Variable: ${JOB_LEVEL_VARIABLE}"
+          echo "Step Level Env Variable: ${STEP_LEVEL_VARIABLE}"
