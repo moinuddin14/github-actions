@@ -14,9 +14,9 @@ on:
     tags:
       - "v2.0"
       - "!v1.*"
-  pull_request:
-    branches: [develop, master]
-    types: ["opened", "edited", "closed"]
+  # pull_request:
+  #   branches: [develop, master]
+  #   types: ["opened", "edited", "closed"]
 
 jobs:
   events-demo:
