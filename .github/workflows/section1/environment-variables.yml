@@ -1,6 +1,9 @@
 name: Working with environment variables
 
-on: push
+on:
+  push:
+    branches:
+      - develop
 
 env:
   GLOBAL_VARIABLE: Global Variable
