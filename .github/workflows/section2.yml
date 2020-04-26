@@ -1,8 +1,19 @@
 name: Events Demo
 
 on:
+  schedule:
+    - 5 * * * *
   # push:
-  #   branches: [master, develop]
+  #   branches:
+  #     - master
+  #     - "!develop"
+  #   paths:
+  #     - "**.js"
+  #     - "**.css"
+  #     - "!**.md"
+  #   tags:
+  #     - "v2.0"
+  #     - "!v1.*"
   pull_request:
     branches: [develop, master]
     types: ["opened", "edited", "closed"]
