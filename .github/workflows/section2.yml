@@ -1,8 +1,8 @@
 name: Events Demo
 
 on:
-  schedule:
-    - 5 * * * *
+  # schedule:
+  #   - 5 * * * *
   # push:
   #   branches:
   #     - master
