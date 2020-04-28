@@ -13,6 +13,7 @@ jobs:
           npm -v
           node 
           console.log('Hello World')
+          .exit
       - name: Hello World Javascript Demo
         uses: actions/hello-world-javascript-action@v1
         with:
