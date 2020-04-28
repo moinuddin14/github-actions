@@ -1,0 +1,30 @@
+name: OS Demo
+
+on: push
+
+jobs:
+  windows-os:
+    name: Windows OS Demo
+    runs-on: windows-latest
+    steps:
+      - name: Default Powershell
+        run: |
+          ls
+      - name: Shell Command
+        run: |
+          echo "Hello World Windows VM"
+        shell: bash
+  ubuntu-os:
+    name: Hello world Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ubuntu Default Shell
+        run: |
+          echo "Hello World Ubuntu"
+  mac-os:
+    name: Hello world Ubuntu
+    runs-on: macos-latest
+    steps:
+      - name: Mac Default Shell
+        run: |
+          echo "Hello World Ubuntu"
