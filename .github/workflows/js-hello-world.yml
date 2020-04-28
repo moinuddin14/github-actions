@@ -1,0 +1,22 @@
+name: Javascript Hello World Actions Demo
+
+on: push
+
+jobs:
+  js-hello-world:
+    name: JS Hello World Action Template Demo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Node JS
+        run: |
+          node -v
+          npm -v
+          node 
+          console.log('Hello World')
+      - name: Hello World Javascript Demo
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: "Khaja"
+      - name: Get the output time
+        run: |
+          echo "The time was ${{ steps.hello.outputs.time }}"
