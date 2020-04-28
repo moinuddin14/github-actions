@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "Hello World Ubuntu"
   mac-os:
-    name: Hello world Ubuntu
+    name: Hello world Mac
     runs-on: macos-latest
     steps:
       - name: Mac Default Shell
