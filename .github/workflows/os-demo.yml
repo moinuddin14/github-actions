@@ -17,6 +17,7 @@ jobs:
   ubuntu-os:
     name: Hello world Ubuntu
     runs-on: ubuntu-latest
+    needs: windows-os
     steps:
       - name: Ubuntu Default Shell
         run: |
@@ -24,6 +25,7 @@ jobs:
   mac-os:
     name: Hello world Mac
     runs-on: macos-latest
+    needs: ubuntu-os
     steps:
       - name: Mac Default Shell
         run: |
