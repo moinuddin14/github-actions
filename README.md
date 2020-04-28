@@ -1,4 +1,2 @@
 # github-actions
-This repository explains the Github Actions.
-
-######################################################
+This repository explains the Github Actions...
